@@ -10,6 +10,7 @@ const createCustomer=()=>{
     const database=firebase.firestore();
     database.collection('customers').add(tempCustomer).then((response)=>{
         console.log(response);
+        loadCustomer()
     }).catch((error)=>{
         console.log(error);
     });

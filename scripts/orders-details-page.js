@@ -41,8 +41,8 @@ const loadData=()=>{
                     const itemRow=`
                     <tr>
                         <td>${record.code}</td>
-                        <td>${record.description}</td>
-                        <td>${record.qty}</td>
+                        <td>${record.nameItem}</td>
+                        <td>${record.quantity}</td>
                         <td>${record.unitPrice}</td>
                         <td>${record.totalCost}</td>
                     </tr>

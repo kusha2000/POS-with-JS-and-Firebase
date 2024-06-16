@@ -52,24 +52,24 @@ const loadIds=()=>{
         database.collection('items').doc(itemId).get().then((response)=>{
             if(response.exists){
                 const data=response.data();
-                $('#description').val(data.description);
-                $('#unit-price').val(data.unitPrice);
-                $('#qty-on-hand').val(data.qtyOnHand);
+                $('#nameItem').val(data.name);
+                $('#quantity').val(data.quantity);
+                $('#price').val(data.price);
             }
         })
 
  })
 
  const addToCart=()=>{
-    const unitPrice=Number.parseInt($('#unit-price').val())
-    const qty=Number.parseInt($('#qty').val())
+    const unitPrice=Number.parseInt($('#price').val())
+    const qty=Number.parseInt($('#quantity').val())
     const totalCost=unitPrice*qty;
 
     const cartObj={
         "code":$('#item-id').val(),
-        "description":$('#description').val(),
+        "nameItem":$('#nameItem').val(),
         "unitPrice":unitPrice,
-        "qty":qty,
+        "quantity":qty,
         "totalCost":totalCost
 
     };
@@ -81,9 +81,9 @@ const loadIds=()=>{
         const row=`
             <tr>
                 <td>${data.code}</td>
-                <td>${data.description}</td>
+                <td>${data.nameItem}</td>
                 <td>${data.unitPrice}</td>
-                <td>${data.qty}</td>
+                <td>${data.quantity}</td>
                 <td>${data.totalCost}</td>
             </tr>
         `;

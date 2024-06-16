@@ -4,38 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles/place-order.css">
+    <link rel="stylesheet" href="styles/main.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastr@2.1.4/build/toastr.min.css">
 </head>
-<body onload="loadIds()">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="dashboard.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="customer.html">Customer</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="item.html">Items</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="orders.html">Orders</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="place-order.html">Place Order</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+<body onload="loadIds()" style="background-color: #0e1523;">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid" style="background-color: #18253c;">
+      <a class="navbar-brand texting" href="#">POS-System</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link texting" aria-current="page" href="dashboard.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link texting" href="customer.html">Customer</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link texting" href="item.html">Items</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link texting actives" href="place-order.html">Place Order</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link texting" href="orders.html">Orders</a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
 
       <hr>
       <div class="container">
@@ -46,7 +47,7 @@
                 </div>
             </div>
             <div class="col-3">
-                <input type="text" disabled class="form-control" id="name">
+                <input type="text" disabled class="form-control" id="name" >
             </div>
             <div class="col-3">
                 <input type="text" disabled class="form-control" id="address">
@@ -68,16 +69,16 @@
                 </div>
             </div>
             <div class="col-3 ">
-                <input type="text" disabled class="form-control" id="description">
+                <input type="text" disabled class="form-control" id="nameItem">
             </div>
             <div class="col-2">
-                <input type="text" disabled class="form-control" id="unit-price">
+                <input type="text" disabled class="form-control" id="quantity">
             </div>
             <div class="col-2">
-                <input type="text" disabled class="form-control" id="qty-on-hand">
+                <input type="text" disabled class="form-control" id="price">
             </div>
-            <div class="col-2">
-                <input type="text" class="form-control" id="qty" placeholder="qty">
+            <div class="col-3">
+                <input type="text" class="form-control" id="qty" placeholder="Needed Quantity">
             </div>
             <br><br>
             <div class="col-12">
@@ -94,9 +95,9 @@
               <thead>
                 <tr>
                   <th>Id</th>
-                  <th>Description</th>
+                  <th>Item Name</th>
                   <th>Unit Price</th>
-                  <th>Qty</th>
+                  <th>Quantity</th>
                   <th>Total</th>
                 </tr>
               </thead>
@@ -113,7 +114,7 @@
         <div class="row">
           <div class="col-6">
             <div class="form-group">
-              <input type="text" disabled id="net-Total">
+              <input type="text" disabled id="net-Total" style="padding:0.5rem;color: red;font-size: larger;">
             </div>
           </div>
           <div class="col-6">

@@ -9,3 +9,29 @@
     width: 100px;
     
 }
+      .navbar .nav-link.texting {
+          color: white;
+          text-decoration: none; /* Optional: to remove underline */
+      }
+      .navbar .nav-link.actives {
+          color: yellow;
+          text-decoration: none; /* Optional: to remove underline */
+      }
+      .navbar .nav-link.texting:hover {
+          color: yellow; /* Change this to your desired hover color */
+      }
+      .navbar .navbar-brand.texting {
+          color: white;
+          text-decoration: none; /* Optional: to remove underline */
+      }
+      .navbar .navbar-brand.texting:hover {
+          color: yellow; /* Change this to your desired hover color */
+      }
+      .topic{
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        height: 90vh;
+      }
