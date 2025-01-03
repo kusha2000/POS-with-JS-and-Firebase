@@ -4,23 +4,25 @@ This project is a simple Point of Sale (POS) system built using JavaScript with 
 
 <h5>Technologies Used:</h5>
 <ul>
-<li>Frontend: HTML, CSS, JavaScript</li>
-<li>Backend: Firebase </li>
-<li>Libraries: Bootstrap for responsive design</li>
+🔹 Frontend: HTML, CSS, Bootstrap, JavaScript<br>
+🔹 Backend: Firebase <br>
 </ul>
 
 Features:
 <ul>
-<li>User Authentication: Users can register, login securely using Firebase Authentication, and access the system.</li>
-<li>Customer Management: CRUD operations (Create, Read, Update, Delete) for managing customer records.</li>
-<li>Item Management: CRUD operations for managing items in the inventory.</li>
-<li>Order Placement: Users can place orders by selecting a customer, adding items with quantities, and calculating the total price dynamically.</li>
-<li>Order Details: Display of order details including customer information, item details, total quantity, and total price.</li>
+✅ User Authentication: Users can register, login securely using Firebase Authentication, and access the system.<br>
+✅ Customer Management: CRUD operations (Create, Read, Update, Delete) for managing customer records.<br>
+✅ Item Management: CRUD operations for managing items in the inventory.<br>
+✅ Order Placement: Users can place orders by selecting a customer, adding items with quantities, and calculating the total price dynamically.<br>
+✅ Order Details: Display of order details including customer information, item details, total quantity, and total price.<br>
 </ul>
 
 <h2>This is the Full Demo of the project</h2><br><br>
 
-![Demo](https://github.com/kusha2000/POS-with-JS-and-Firebase/assets/127003267/7ba7c5ed-f07f-49a2-892a-a84739586fc2)<br><br>
+
+
+https://github.com/user-attachments/assets/62fe81e1-f995-4cc1-aedd-acb9d64ef3d2
+
 
 <br><br>
 <h2>This is the screenshots of the system</h2><br><br>
